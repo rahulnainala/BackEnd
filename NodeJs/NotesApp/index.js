@@ -1,14 +1,10 @@
-const fs = require("fs");
+console.log(process.argv);
+const command = process.argv[2];
 
-fs.appendFileSync("notes.txt", "I am from Hyderabad");
-
-var validator = require("validator");
-
-let y = "https://rahulnainala.com";
-
-let x = validator.isURL(y);
-
-if (x === true) {
-  console.log(`Hello ${x}`);
+if (command === "Add") {
+  console.log("user added");
+} else if (command === "Delete") {
+  console.log("user Deleted");
+} else {
+  console.log("Default");
 }
-console.log(x);
