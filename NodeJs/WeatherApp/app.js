@@ -1,11 +1,9 @@
-console.log("Starting Code .....");
+const request = require("postman-request");
 
-setTimeout(() => {
-  console.log("Set Timeout has ended after 4 seconds");
-}, 4000);
+const url =
+  "https://api.weatherstack.com/current?access_key=e54281e6531e4fddf1ac713fc9ff2606&query=new%20delhi";
 
-setTimeout(() => {
-  console.log("Set Timeout has ended after 2 seconds");
-}, 2000);
-
-console.log("Stopping Code .....");
+request({ url: url }, (error, response) => {
+  const data = JSON.parse(response.body);
+  console.log(data.current);
+});
