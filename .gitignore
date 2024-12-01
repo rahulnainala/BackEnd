@@ -6,5 +6,4 @@
 /NPM/node_modules
 /Referencing-Documents/node_modules
 /Redux/code_Mosh/redux-starter/node_modules
-/NodeJs/NotesApp/node_modules
-/NodeJs/WeatherApp/node_modules
+**/node_modules/
