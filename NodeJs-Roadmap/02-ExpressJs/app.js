@@ -1,6 +1,6 @@
+const Joi = require("joi");
 const express = require("express");
 const handleErrors = require("./controllers/errorHandling");
-const Joi = require("joi");
 
 const app = express();
 
